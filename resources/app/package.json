@@ -1,0 +1,23 @@
+{
+  "name": "frankenstein",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-packager . bookapp --platform=win32 --arch=all",
+    "archive": "asar pack bookapp/resources/app bookapp/resources/app/asar"
+  },
+  "author": "bandana phone",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^0.12.1",
+    "browserify": "^13.1.0",
+    "electron": "^1.3.2",
+    "electron-packager": "^7.5.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "reactify": "^1.1.1"
+  }
+}
